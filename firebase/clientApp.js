@@ -12,6 +12,10 @@ const firebaseConfig = {
   appId: "1:124903919118:web:a66967d0cf748fc0e3765f",
 };
 
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+export const database = getFirestore(app);
+
 // // Your web app's Firebase configuration
 // const firebaseConfig = {
 //   apiKey: process.env.NEXT_API_KEY,
@@ -21,7 +25,3 @@ const firebaseConfig = {
 //   messagingSenderId: process.env.NEXT_MESSAGING_SENDER_ID,
 //   appId: process.env.NEXT_APP_ID,
 // };
-
-// Initialize Firebase
-const app = initializeApp(firebaseConfig);
-export const database = getFirestore(app);
